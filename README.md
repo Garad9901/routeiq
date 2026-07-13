@@ -183,3 +183,19 @@ All Kubernetes deployment configs are localized in the `/k8s` directory:
 - **DOT Engineer**:
   - Email: `engineer@routeiq.com`
   - Access Key: `engineer_routeiq_2026`
+
+---
+
+## ⚡ Vercel Deployment (Frontend)
+
+The Next.js 15 client dashboard is fully compatible with Vercel deployment. Since it is nested inside the `/frontend` directory of the repository, follow these deployment steps:
+
+### Step-by-Step Deployment
+1. Go to your [Vercel Dashboard](https://vercel.com) and click **Add New > Project**.
+2. Import this GitHub repository.
+3. In the **Configure Project** settings:
+   * **Root Directory**: Click *Edit* and select the `frontend` directory.
+   * **Framework Preset**: Select **Next.js**.
+   * **Build & Development Settings**: Keep defaults (Vercel will detect and run the build scripts configured in `frontend/vercel.json` and `frontend/package.json`).
+4. Click **Deploy**. Vercel will compile the Next.js application and deploy it.
+
